@@ -1,6 +1,7 @@
 import pygame
 import math
 import random
+from pygame import mixer
 
 # Initialize the pygame
 pygame.init()
@@ -10,6 +11,10 @@ screen = pygame.display.set_mode((800, 600))
 
 # Background
 background = pygame.image.load('background.png')
+
+# Background sound
+mixer.music.load('background.wav')
+mixer.music.play(-1)
 
 # Tile and icon
 pygame.display.set_caption("Space Invaders")
@@ -48,15 +53,21 @@ bulletY_change = 10
 bullet_state = "ready"
 
 # Score
-
 score_value = 0
 font = pygame.font.Font('freesansbold.ttf', 32)
 textX = 10
 textY = 10
 
+# Game over text
+over_font = pygame.font.Font('freesansbold.ttf', 64)
+
 def show_score(x, y):
     score = font.render("Score: " + str(score_value), True, (255, 255, 255))
     screen.blit(score, (x, y))
+
+def game_over_text():
+    over_text = over_font.render("GAME OVER", True, (255, 255, 255))
+    screen.blit(over_text, (200, 250))
 
 def player(x, y):
     screen.blit(playerImg, (x, y))
@@ -101,6 +112,8 @@ while running:
                 playerX_change = 5
             if event.key == pygame.K_SPACE:
                 if bullet_state is "ready":
+                    bullet_Sound = mixer.Sound('laser.wav')
+                    bullet_Sound.play()
                     # Get the current x coordinate of the spaceship
                     bulletX = playerX
                     fire_bullet(playerX, bulletY)
@@ -119,6 +132,14 @@ while running:
     # Enemy movement
     # Checking for boundaries of invaders so it doesn't go out of bounds
     for i in range(num_of_enemies):
+
+        # Game over
+        if enemyY[i] > 440:
+            for j in range(num_of_enemies):
+                enemyY[j] = 2000
+            game_over_text()
+            break
+
         enemyX[i] += enemyX_change[i]
         if enemyX[i] <= 0:
             enemyX_change[i] = 4
@@ -130,6 +151,8 @@ while running:
         # Collision
         collision = isCollision(enemyX[i], enemyY[i], bulletX, bulletY)
         if collision:
+            explosion_Sound = mixer.Sound('explosion.wav')
+            explosion_Sound.play()
             bulletY = 480
             bullet_state = "ready"
             score_value += 1
