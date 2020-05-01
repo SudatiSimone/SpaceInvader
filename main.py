@@ -1,4 +1,5 @@
 import pygame
+import math
 import random
 
 # Initialize the pygame
@@ -23,7 +24,7 @@ playerX_change = 0
 
 # Enemy
 enemyImg = pygame.image.load('alien.png')
-enemyX = random.randint(0, 800)
+enemyX = random.randint(0, 735)
 enemyY = random.randint(50, 150)
 enemyX_change = 4
 enemyY_change = 40
@@ -31,13 +32,14 @@ enemyY_change = 40
 # Bullet
 # Ready - you can't see the bullet on the screen
 # Fire - the bullet is currently moving
-BulletImg = pygame.image.load('bullet.png')
-BulletX = 0
-BulletY = 480
-BulletX_change = 4
-BulletY_change = 10
+bulletImg = pygame.image.load('bullet.png')
+bulletX = 0
+bulletY = 480
+bulletX_change = 4
+bulletY_change = 10
 bullet_state = "ready"
 
+score = 0
 
 def player(x, y):
     screen.blit(playerImg, (x, y))
@@ -50,8 +52,15 @@ def enemy(x, y):
 def fire_bullet(x, y):
     global bullet_state
     bullet_state = "fire"
-    screen.blit(BulletImg, (x + 16, y + 10))
+    screen.blit(bulletImg, (x + 16, y + 10))
 
+
+def isCollision(enemyX, enemyY, bulletX, bulletY):
+    distance = math.sqrt((math.pow(enemyX - bulletX, 2)) + (math.pow(enemyY - bulletY, 2)))
+    if distance < 27:
+        return True
+    else:
+        return False
 
 # Game Loop
 running = True
@@ -59,7 +68,7 @@ while running:
 
     # RGB - Red, Green, Blue
     screen.fill((0, 0, 0))
-    # backgroud image
+    # background image
     screen.blit(background, (0, 0))
 
     for event in pygame.event.get():
@@ -73,7 +82,10 @@ while running:
             if event.key == pygame.K_RIGHT:
                 playerX_change = 5
             if event.key == pygame.K_SPACE:
-                fire_bullet(playerX, BulletY)
+                if bullet_state is "ready":
+                    # Get the current x coordinate of the spaceship
+                    bulletX = playerX
+                    fire_bullet(playerX, bulletY)
 
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
@@ -96,9 +108,22 @@ while running:
         enemyY += enemyY_change
 
     # Bullet movement
+    if bulletY <= 0:
+        bulletY = 480
+        bullet_state = "ready"
     if bullet_state == "fire":
-        fire_bullet(playerX, BulletY)
-        BulletY -= BulletY_change
+        fire_bullet(bulletX, bulletY)
+        bulletY -= bulletY_change
+
+    # Collision
+    collision = isCollision(enemyX, enemyY, bulletX, bulletY)
+    if collision:
+        bulletY = 480
+        bullet_state = "ready"
+        score += 1
+        print(score)
+        enemyX = random.randint(0, 800)
+        enemyY = random.randint(50, 150)
 
     player(playerX, playerY)
     enemy(enemyX, enemyY)
