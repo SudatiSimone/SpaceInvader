@@ -2,12 +2,14 @@
 A first game in python about space Invader with pygame.
 
 Player's control to play:
-Left arrow to move left the spaceship
-Right arrow to move right the spaceship
-Space to fire 
+
+- Left arrow to move left the spaceship
+
+- Right arrow to move right the spaceship
+
+- Space to fire 
 
 Below an image of the play:
-
 
 
 <img src="Capture.JPG"
