@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7c21cbf-85a5-46cb-be29-54acf344da83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alien.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/background.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bullet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/explosion.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/laser.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/player.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_Controls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_isCollision.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/transportation.png" beforeDir="false" />
-    </list>
+    <list default="true" id="e7c21cbf-85a5-46cb-be29-54acf344da83" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +131,7 @@
       <workItem from="1588341138725" duration="6289000" />
       <workItem from="1588362170994" duration="2996000" />
       <workItem from="1588368824364" duration="6774000" />
-      <workItem from="1588413258216" duration="3941000" />
+      <workItem from="1588413258216" duration="4308000" />
     </task>
     <servers />
   </component>
