@@ -18,8 +18,7 @@ To test I used the testing framework unittest.
 ### **Below an image of the play:**
 
 
-<img src="Capture.JPG"
-     style="float: left; margin-right: 10px;" />
+![Capture](C:\Users\susim\Desktop\Github_Clone\SpaceInvader\Capture.jpg)
 
 
 References to tutorial --> freeCodeCamp.org 
