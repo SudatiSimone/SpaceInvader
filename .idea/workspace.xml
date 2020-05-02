@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7c21cbf-85a5-46cb-be29-54acf344da83" name="Default Changelist" comment="" />
+    <list default="true" id="e7c21cbf-85a5-46cb-be29-54acf344da83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alien.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/background.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/explosion.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/laser.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_Controls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_isCollision.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transportation.png" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="278" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -46,7 +62,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_isCollision.py">
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="spaceInvader" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SpaceInvader" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SpaceInvader/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="spaceInvader" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,6 +124,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python tests.Unittests in test_isCollision.py" />
         <item itemvalue="Python.main" />
       </list>
@@ -105,7 +144,7 @@
       <workItem from="1588341138725" duration="6289000" />
       <workItem from="1588362170994" duration="2996000" />
       <workItem from="1588368824364" duration="6774000" />
-      <workItem from="1588413258216" duration="2764000" />
+      <workItem from="1588413258216" duration="3941000" />
     </task>
     <servers />
   </component>
@@ -127,7 +166,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpaceInvader$main.coverage" NAME="main Coverage Results" MODIFIED="1588376389320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SpaceInvader$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1588418611019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SpaceInvader" />
     <SUITE FILE_PATH="coverage/spaceInvader$main.coverage" NAME="main Coverage Results" MODIFIED="1588338799193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SpaceInvader$Unittests_in_test_isCollision_py.coverage" NAME="Unittests in test_isCollision.py Coverage Results" MODIFIED="1588414360303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SpaceInvader$Unittests_in_test_isCollision_py.coverage" NAME="Unittests in test_isCollision.py Coverage Results" MODIFIED="1588418606842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
