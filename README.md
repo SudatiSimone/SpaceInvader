@@ -1,17 +1,19 @@
 # SpaceInvader
-A first game in python about space Invader with pygame.
+A first game in python about space Invader with pygame. 
 
-How to play? --> Download or clone the repository and run the main.py file
+To test I used the testing framework unittest.
 
-Player's control to play:
+###### How to play? 
+
+--> Download or clone the repository and run the main.py file
+
+###### Player's control to play:
 
 - Left arrow to move left the spaceship
-
 - Right arrow to move right the spaceship
-
 - Space to fire 
 
-Below an image of the play:
+###### Below an image of the play:
 
 
 <img src="Capture.JPG"
