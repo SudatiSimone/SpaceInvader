@@ -3,7 +3,7 @@ A first game in python about space Invader with pygame.
 
 To test I used the testing framework unittest.
 
-![Python application](https://github.com/SudatiSimone/SpaceInvader/workflows/Python%20application/badge.svg?branch=master&event=push)
+![Test](https://github.com/SudatiSimone/SpaceInvader/workflows/Test/badge.svg?branch=master&event=push)
 
 ### **How to play?** 
 
