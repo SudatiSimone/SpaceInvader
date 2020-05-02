@@ -17,7 +17,7 @@ To test I used the testing framework unittest.
 
 ### **Below an image of the play:**
 
-<img src="Capture.JPG"
+<img src="Capture.jpg"
      style="float: left; margin-right: 10px;" />
 
 
