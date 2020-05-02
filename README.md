@@ -3,11 +3,11 @@ A first game in python about space Invader with pygame.
 
 To test I used the testing framework unittest.
 
-##### **How to play?** 
+### **How to play?** 
 
 --> Download or clone the repository and run the main.py file
 
-#### **Player's control to play:**
+### **Player's control to play:**
 
 - Left arrow to move left the spaceship
 - Right arrow to move right the spaceship
