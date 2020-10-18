@@ -1,9 +1,11 @@
 # SpaceInvader
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  ![Test](https://github.com/SudatiSimone/SpaceInvader/workflows/Test/badge.svg?branch=master&event=push)
+
 A first game in python about space Invader with pygame. 
 
 To test I used the testing framework unittest.
 
-![Test](https://github.com/SudatiSimone/SpaceInvader/workflows/Test/badge.svg?branch=master&event=push)
 
 ### **How to play?** 
 
